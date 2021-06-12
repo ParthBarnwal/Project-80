@@ -1,0 +1,28 @@
+#submit_button
+{
+	margin-top: 20px; 
+	margin-bottom: 20px; 
+}
+#sort_button
+{
+	margin-top: 20px; 
+	margin-bottom: 20px; 
+}
+
+input
+{
+	margin: 10px;
+}
+#GuestName
+{
+    padding: 10px;
+	border-radius: 10px;
+    width: 50%;
+}
+
+#display_name_without_commas
+{
+    padding: 10px;
+	border-radius: 10px;
+    width: 50%;
+}
