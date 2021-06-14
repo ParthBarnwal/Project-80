@@ -9,7 +9,17 @@ function submit()
 }
 function show()
 {
-    var remove_commas=number_of_people.join(" ");
+    var display_guest_list_array=[];
+    var length_of_the_number_of_people_array=number_of_people.length;
+    console.log(length_of_the_number_of_people_array);
+
+    for(var k=0; k<length_of_the_number_of_people_array; k++)
+    {
+        display_guest_list_array.push("<h4> "+number_of_people[k] + "</h4>");
+        console.log(display_guest_list_array);
+    }
+
+    var remove_commas=display_guest_list_array.join(" ");
     console.log(remove_commas);
     document.getElementById("display_name").innerHTML=remove_commas;
 }
@@ -17,7 +27,24 @@ function sorting()
  {
     number_of_people.sort();
     console.log(number_of_people);
-    document.getElementById("display_name_sorted").innerHTML=number_of_people;
+
+    var display_guest_sorted_list_array=[];
+
+    var length_of_the_number_of_people_array=number_of_people.length;
+    console.log(length_of_the_number_of_people_array);
+
+    for(var k=0; k<length_of_the_number_of_people_array; k++)
+    {
+        display_guest_sorted_list_array.push("<h4> "+number_of_people[k] + "</h4>");
+        console.log(display_guest_sorted_list_array);
+    }
+
+    display_guest_sorted_list_array.sort();
+    console.log(display_guest_sorted_list_array);
+
+    var remove_commas=display_guest_sorted_list_array.join(" ");
+    console.log(remove_commas);
+    document.getElementById("display_name_sorted").innerHTML=remove_commas;
  }
  function searching()
  {
